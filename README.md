@@ -3,8 +3,6 @@ Pet Companion script for QBCore,
 Use an item to create a specific animal and have it follow you.
 Use the item again to despawn the animal
 
-I don't plan to maintain this repository
-
 # Installation
 Create the necessary item (doggo) in your shared.lua
 Add the resource to your FiveM server and start it :)
