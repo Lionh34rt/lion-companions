@@ -27,7 +27,8 @@ AddEventHandler('onClientResourceStart', function ()
 end)
 
 RegisterNetEvent('lion-companions:client:ToggleCompanion')
-AddEventHandler('lion-companions:client:ToggleCompanion', function(model)
+AddEventHandler('lion-companions:client:ToggleCompanion', function()
+    local model = "a_c_shepherd"
     if companion == nil or #(GetEntityCoords(PlayerPedId()) - GetEntityCoords(companion)) < 2.0 then
         -- Make Animal Sit
         if companion ~= nil then
