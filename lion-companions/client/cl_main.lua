@@ -27,18 +27,8 @@ AddEventHandler('onClientResourceStart', function ()
 end)
 
 RegisterNetEvent('lion-companions:client:ToggleCompanion')
-AddEventHandler('lion-companions:client:ToggleCompanion', function()
-    local model = "a_c_shepherd"
+AddEventHandler('lion-companions:client:ToggleCompanion', function(model)
     if companion == nil or #(GetEntityCoords(PlayerPedId()) - GetEntityCoords(companion)) < 2.0 then
-        -- Make Animal Sit
-        if companion ~= nil then
-            RequestAnimDict("creatures@rottweiler@amb@world_dog_sitting@base")
-            while not HasAnimDictLoaded("creatures@rottweiler@amb@world_dog_sitting@base") do
-                Wait(1)
-            end
-            TaskPlayAnim(companion, "creatures@rottweiler@amb@world_dog_sitting@base", "base", 8.0, 0.0, -1, 1, 0, 0, 0, 0)
-        end
-
         TaskStartScenarioInPlace(PlayerPedId(), "CODE_HUMAN_MEDIC_TEND_TO_DEAD", 0, true)
         local progressBarMessage = "Picking Up Companion.."
         if not animalSpawned then
