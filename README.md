@@ -6,11 +6,8 @@ Use the item again to despawn the animal.
 Pressing "E" makes the animal follow you
 
 # Installation
-Create the necessary item (doggo) in your shared.lua
+Create the necessary items in your shared.lua
 Add the resource to your FiveM server and start it :)
 
 # Preview
 https://streamable.com/ge1nrc
-
-# Interested in other custom scripts for QBCore?
-Discord Invite link: https://discord.gg/AWyTUEnGeN
