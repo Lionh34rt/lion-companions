@@ -1,8 +1,5 @@
-QBCore = nil
-
-TriggerEvent('QBCore:GetObject', function(obj) 
-    QBCore = obj 
-end)
+QBCore = nil 
+QBCore = exports['qb-core']:GetCoreObject()
 
 QBCore.Functions.CreateUseableItem("pet_shepherd", function(source, item)
 	local src = source
